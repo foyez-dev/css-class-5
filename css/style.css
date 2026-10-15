@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+nav{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, #004e92, #000428);
+    padding: 12px 5px;
+
+}
+nav li{
+    display: inline-block;
+    position: relative;
+}
+nav a{
+    color: white;
+    padding: 15px 5px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+nav li:hover a{
+    background: rgba(255, 255, 255, 0.5);
+}
+nav .submenu{
+    position: absolute;
+    background:white;
+    min-width: 200px;
+    border: 1px solid rgb(197, 197, 199);
+    border-top: 4px solid rgb(95, 52, 237);
+    opacity: 0;
+    visibility: hidden;
+    transform: 0.8s;
+    margin-top: 50px;
+}
+nav .submenu li{
+    display: block;
+    text-align: left;
+}
+nav .submenu li a{
+    display: block;
+    padding: 8px 10px;
+    color: rgb(1, 1, 39);
+    border-bottom: 1px solid rgb(213, 213, 216);
+    border-radius: 0px;
+}
+nav li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0px;
+}
+nav li .submenu {
+    transition: 0.5s;
+}
+nav li .submenu li:hover{
+    margin-left: 15px;
+}
+nav li .submenu li:hover > a{
+    margin-left: 15px;
+    color: rgb(95, 52, 237);
+}
+nav .submenu .submenu{
+    left: 100%;
+    top: 0;
+}
+nav .submenu a:hover{
+    visibility: visible ;
+}
+
